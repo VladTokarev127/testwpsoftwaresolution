@@ -1,0 +1,95 @@
+.header
+	position: fixed
+	z-index: 9
+	left: 0
+	top: 0
+	width: 100%
+	background-color: #fff
+	box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.14)
+	padding-top: 15px
+	padding-bottom: 15px
+	&__logo
+		margin-right: auto
+	&__logo-wrapper
+		display: flex
+		align-items: center
+		cursor: pointer
+		text-decoration: none
+	&__logo-img
+		width: 50px
+		height: 50px
+		margin-right: 4px
+		img
+			width: 100%
+			height: auto
+	&__logo-content
+		flex: 1
+	&__logo-title
+		font-weight: 700
+		font-size: 22px
+		line-height: 33px
+		color: $accent-color
+		margin-bottom: -5px
+	&__logo-subtitle
+		font-size: 14px
+		line-height: 21px
+		font-weight: 500
+		color: $third-color
+	&__menu
+		display: flex
+		align-items: center
+		@include media-breakpoint-down(md)
+			display: none
+			flex-direction: column
+			position: absolute
+			text-align: center
+			left: 0
+			width: 100%
+			top: 100%
+			background-color: #fff
+			padding: 0 15px
+			padding-bottom: 20px
+			box-shadow: 0px 14px 12px rgba(0, 0, 0, 0.14)
+	&__nav
+		margin-right: 42px
+		@include media-breakpoint-down(md)
+			margin-right: 0
+	&__nav-list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		display: flex
+		align-items: center
+		@include media-breakpoint-down(md)
+			display: block
+		li
+			margin-right: 56px
+			font-size: 16px
+			line-height: 24px
+			font-weight: 600
+			@include media-breakpoint-down(md)
+				margin-right: 0
+				margin-bottom: 20px
+			&:last-child
+				margin-right: 0
+		a
+			color: $text-color
+			text-decoration: none
+			transition: color $transition
+			&:hover,
+			&:focus,
+			&:focus-visible
+				color: $primary-color
+	&__btn
+		font-size: 16px
+		line-height: 24px
+		height: 45px
+		padding: 0 29px
+		@include media-breakpoint-down(md)
+			display: inline-flex
+			max-width: 320px
+			margin: 0 auto
+	&__close
+		display: none
+		@include media-breakpoint-down(md)
+			display: flex

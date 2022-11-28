@@ -1,0 +1,125 @@
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	cursor: pointer
+	text-decoration: none
+	border: 2px solid $primary-color
+	background: $primary-color
+	height: 55px
+	font-family: inherit
+	padding: 0 23px
+	box-shadow: 0px 4px 10px rgba(46, 212, 122, 0.396078)
+	border-radius: 4px
+	color: $white-color
+	fill: $white-color
+	font-size: 18px
+	line-height: 27px
+	font-weight: 700
+	transition: border $transition, background $transition, color $transition, fill $transition, box-shadow $transition
+	@include media-breakpoint-down(md)
+		font-size: 16px
+		line-height: 1.5
+	&:hover,
+	&:focus,
+	&:focus-visible
+		background: 0
+		color: $primary-color
+		fill: $primary-color
+	&_border
+		background: 0
+		color: $primary-color
+		box-shadow: none
+		&:hover,
+		&:focus,
+		&:focus-visible
+			background: $primary-color
+			color: $white-color
+			fill: $white-color
+	&_accent
+		background: $accent-color
+		border-color: $accent-color
+		&:hover,
+		&:focus,
+		&:focus-visible
+			background: 0
+			color: $accent-color
+			fill: $accent-color
+	&_accent.btn_border
+		background: 0
+		color: $accent-color
+		fill: $accent-color
+		&:hover,
+		&:focus,
+		&:focus-visible
+			background: $accent-color
+			color: $white-color
+			fill: $white-color
+	&__icon
+		font-size: 0
+		margin-right: 20px
+		display: flex
+		align-items: center
+	&_full
+		width: 100%
+
+.menu-btn
+	display: flex
+	align-items: center
+	justify-content: center
+	align-self: flex-start
+	width: 50px
+	height: 50px
+	background-color: $primary-color
+	cursor: pointer
+	position: relative
+	border-radius: 10px
+	box-shadow: 0px 4px 10px rgba(46, 212, 122, 0.396078)
+	z-index: 9
+	padding: 0
+	border: 0
+	border: 1px solid $primary-color
+	transition: background $transition
+	&.active
+		z-index: 9
+		span
+			background: transparent !important
+			transform: rotate(90deg)
+			&::before
+				transform: rotate(45deg)
+				top: 0
+				background-color: $white-color
+			&::after
+				transform: rotate(-45deg)
+				bottom: 0
+				background-color: $white-color
+	span
+		display: block
+		position: relative
+		width: 25px
+		height: 3px
+		transition: $transition
+		background-color: $white-color
+		&::before,&::after
+			content: ''
+			display: block
+			width: 25px
+			height: 3px
+			background: $white-color
+			position: absolute
+			left: 0px
+			transition: all $transition
+		&::before
+			top: -8px
+		&::after
+			bottom: -8px
+	&:hover,
+	&:focus,
+	&:focus-visible
+		background: 0
+		span
+			background-color: $primary-color
+			&::before,
+			&::after
+				background-color: $primary-color

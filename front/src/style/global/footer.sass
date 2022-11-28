@@ -1,0 +1,125 @@
+.footer
+	background: $darkest-bg
+	padding-bottom: 21px
+	padding-top: 18px
+	&__top
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		flex: 1 100%
+		padding-bottom: 13px
+	&__main
+		flex: 0 431px
+		padding-bottom: 13px
+		padding-top: 18px
+	&__counter
+		.wps_visitor_title
+			font-size: 16px
+			line-height: 24px
+			font-weight: 700
+			color: #fff
+			margin-bottom: 9px
+		#wpsvctable
+			font-size: 12px
+			line-height: 18px
+			& > *
+				color: #fff !important
+				margin-bottom: 4px
+				padding-left: 25px
+				position: relative
+				&::after
+					position: absolute
+					left: 0
+					top: -2px
+					content: ''
+					width: 20px
+					height: 20px
+					background-repeat: no-repeat
+					background-position: center
+				&:last-child
+					margin-bottom: 0
+		#wpsvcvisit::after
+			background-image: url(../img/counter-1.svg)
+		#wpsvctotal::after
+			background-image: url(../img/counter-2.svg)
+		#wpsvcviews::after
+			background-image: url(../img/counter-3.svg)
+		#wpsvctotalviews::after
+			background-image: url(../img/counter-4.svg)
+		#wpsvconline::after
+			background-image: url(../img/counter-5.svg)
+		.wps_text_glowing
+			display: flex
+			margin-bottom: 10px
+			span
+				padding: 0 3px
+				height: 22px
+				display: inline-flex
+				align-items: center
+				justify-content: center
+				color: #fff
+				font-weight: 700
+				font-size: 18px
+				line-height: 1
+				background-color: #000
+	&__desc
+		font-size: 14px
+		line-height: 1.5
+		color: $white-color
+		font-family: $second-font
+	&__logo
+		margin-right: auto
+		margin-bottom: 16px
+		margin-left: -10px
+	&__logo-wrapper
+		display: flex
+		align-items: center
+		cursor: pointer
+		text-decoration: none
+	&__logo-img
+		width: 50px
+		height: 50px
+		margin-right: 4px
+		img
+			width: 100%
+			height: auto
+	&__logo-content
+		flex: 1
+	&__logo-title
+		font-weight: 700
+		font-size: 22px
+		line-height: 33px
+		color: $accent-color
+		margin-bottom: -5px
+	&__logo-subtitle
+		font-size: 14px
+		line-height: 21px
+		font-weight: 500
+		color: $white-color
+	&__bottom
+		padding-top: 21px
+		border-top: 1px solid #314160
+		flex: 1 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+	&__links,
+	&__copyright
+		font-size: 12px
+		line-height: 16px
+		color: $white-color
+		white-space: pre
+		a
+			color: $white-color
+			text-decoration: none
+			transition: color $transition
+			&:hover,
+			&:focus,
+			&:focus-visible
+				color: $primary-color
+	&__links
+		margin-right: 10px
+		@include media-breakpoint-down(xs)
+			margin-bottom: 10px
+			flex: 1 100%

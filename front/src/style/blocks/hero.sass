@@ -1,0 +1,74 @@
+.hero
+	padding-top: 28px
+	padding-bottom: 0.5px
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	@include media-breakpoint-down(xl)
+		padding-bottom: 60px
+	@include media-breakpoint-down(lg)
+		padding-bottom: 120px
+	&__container
+		align-items: flex-start
+		justify-content: space-between
+		@include media-breakpoint-down(lg)
+			align-items: center
+	&__content
+		flex: 0 600px
+		padding-top: 48px
+		@include media-breakpoint-down(lg)
+			padding-top: 0
+	&__suptitle
+		margin-bottom: -7px
+		color: $third-color
+		@include media-breakpoint-down(xs)
+			margin-bottom: 0
+			font-size: 20px
+	&__title
+		margin-bottom: 13px
+		color: $accent-color
+		@include media-breakpoint-down(xs)
+			font-size: 28px
+	&__text
+		margin-bottom: 36px
+		max-width: 570px
+		font-size: 20px
+		@include media-breakpoint-down(md)
+			font-size: 16px
+			margin-bottom: 18px
+		p
+			line-height: 1.5
+	&__list
+		margin-bottom: 51px
+		font-size: 20px
+		font-weight: 600
+		@include media-breakpoint-down(md)
+			font-size: 16px
+			margin-bottom: 30px
+	&__img
+		margin-right: -5px
+		@include media-breakpoint-down(xl)
+			max-width: 500px
+		@include media-breakpoint-down(lg)
+			max-width: 350px
+		@include media-breakpoint-down(md)
+			display: none
+		img
+			max-width: 100%
+			height: auto
+	&__btns
+		display: flex
+		flex-wrap: wrap
+		@include media-breakpoint-down(xs)
+			display: grid
+			grid-template-columns: repeat(1,1fr)
+			gap: 16px
+	&__btn
+		display: inline-flex
+	&__btn_accent
+		margin-right: 12px
+		padding: 0 22px
+		display: inline-flex
+		font-weight: 500
+		@include media-breakpoint-down(xs)
+			margin-right: 0

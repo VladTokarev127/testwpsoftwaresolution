@@ -1,0 +1,37 @@
+.headline
+	padding-top: 55px
+	padding-bottom: 114px
+	@include media-breakpoint-down(xl)
+		padding-top: 60px
+		padding-bottom: 60px
+	@include media-breakpoint-down(xs)
+		padding-top: 10px
+	&__container
+		align-items: flex-start
+		justify-content: center
+	&__img
+		font-size: 0
+		margin-right: 76px
+		margin-left: -68px
+		@include media-breakpoint-down(xl)
+			margin-left: 0
+			flex: 1 100%
+			text-align: center
+			margin-bottom: 30px
+			margin-right: 0
+		img
+			max-width: 100%
+			height: auto
+	&__content
+		flex: 0 570px
+		padding-top: 3px
+	&__suptitle
+		margin-bottom: 8px
+	&__title
+		color: $accent-color
+		margin-bottom: 23px
+	&__text
+		margin-bottom: 38px
+	&__btn
+		display: inline-flex
+		padding: 0 75px
