@@ -4,9 +4,50 @@
 	background-repeat: no-repeat
 	background-position: top center
 	background-size: cover
+	position: relative
+	z-index: 1
+	overflow: hidden
 	@include media-breakpoint-down(md)
-	padding-bottom: 60px
-	padding-bottom: 60px
+		padding-bottom: 60px
+		padding-top: 60px
+	&__bg
+		position: absolute
+		left: 0
+		top: 0
+		z-index: -1
+		width: 100%
+		height: auto
+		background-color: transparent
+		background-repeat: no-repeat
+		background-position: top center
+		background-size: cover
+		&::after
+			position: absolute
+			right: 0
+			bottom: 7px
+			content: ''
+			width: 60px
+			height: 60px
+			background: 0
+			background-image: linear-gradient(to left, #F2F6FF, #F3F7FF)
+		@include media-breakpoint-down(md)
+			background-size: contain
+		img
+			width: 100%
+			height: auto
+			object-fit: cover
+			position: relative
+			z-index: 1
+	&::after
+		position: absolute
+		z-index: -2
+		left: 0
+		bottom: 0
+		content: ''
+		width: 100%
+		height: 100%
+		background-image: url(../img/contacts-bg-support.jpg)
+		background-size: contain
 	&__content
 		text-align: center
 		max-width: 931px

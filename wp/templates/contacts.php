@@ -1,5 +1,6 @@
 <!-- start section contacts -->
-<section class="contacts" style="background-image: url('<?php the_field('contacts_background'); ?>');">
+<section class="contacts">
+	<div class="contacts__bg"><img src="<?php the_field('contacts_background'); ?>" alt=""></div>
 	<div class="container">
 
 		<div class="contacts__content text"><?php the_field('contacts_text'); ?></div>

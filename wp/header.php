@@ -12,7 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="<?php echo get_template_directory_uri() . '/assets/img/favicon.png' ?>" type="image/x-icon">
+	<link rel="shortcut icon" href="<?php echo get_template_directory_uri() . '/assets/img/favicon.ico' ?>" type="image/x-icon">
+	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri() . '/assets/img/apple-touch-icon.png' ?>">
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
@@ -21,7 +22,6 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 	<?php wp_head(); ?>
 </head>
 

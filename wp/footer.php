@@ -34,7 +34,7 @@
 	<div class="popup__wrapper" id="popup-video">
 		<div class="overlay"></div>
 		<div class="popup popup__video">
-			<iframe src="https://www.youtube.com/embed/jGmiYzCPnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
 	<div class="popup__wrapper" id="popup-review">
@@ -53,18 +53,6 @@
 	</div>
 
 	<?php wp_footer(); ?>
-	<script>
-		document.addEventListener('wpcf7submit', function( event ) {
-			console.log(1)
-			$('.popup__wrapper').addClass('hide');
-			setTimeout(function () {
-				$('.popup__wrapper').removeClass('active hide').hide();
-				$('body').removeClass('overflow-hidden');
-				$('#popup-thanks').show().addClass('active');
-				$('body').addClass('overflow-hidden');
-			}, 300)
-		}, false );
-	</script>
 
 </body>
 </html>

@@ -1,5 +1,6 @@
 <!-- start section hero -->
-<section class="hero" style="background-image: url('<?php the_field('hero_background'); ?>')">
+<section class="hero">
+	<div class="hero__bg" style="background-image: url('<?php the_field('hero_background'); ?>');"></div>
 	<div class="container hero__container">
 
 		<div class="hero__content">

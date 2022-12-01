@@ -48,4 +48,14 @@ $(function () {
 		}
 	});
 
+	document.addEventListener('wpcf7mailsent', function( event ) {
+		$('.popup__wrapper').addClass('hide');
+		setTimeout(function () {
+			$('.popup__wrapper').removeClass('active hide').hide();
+			$('body').removeClass('overflow-hidden');
+			$('#popup-thanks').show().addClass('active');
+			$('body').addClass('overflow-hidden');
+		}, 300)
+	}, false );
+
 });
